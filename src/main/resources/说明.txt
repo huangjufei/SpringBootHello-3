@@ -1,5 +1,6 @@
 该项目是springboot项目,集成统一异常,统一返回格式,日志(slf4j,logback),
 jpa,自定读取properties功能,还有强大得aop功能aspect包下,热部署;
+frist
 
 
 有建库建表文件在resources/sql目录下

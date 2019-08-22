@@ -1,0 +1,18 @@
+# 选择使用 dev或 product的配置,这个十分重要,端口号被重新映射(使用配置文件中的端口)
+spring:
+  profiles:
+    active: dev
+
+# 连接数据库的配置    
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://192.168.124.20:3306/springboot?useLegacyDatetimeCode=false&serverTimezone=GMT%2B8&useUnicode=true&characterEncoding=UTF-8&autoReconnect=true
+    username: root
+    password: admin123
+
+# jpa相关的配置    
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+    database-platform: org.hibernate.dialect.MySQL5InnoDBDialect

@@ -1,0 +1,12 @@
+#下面这是yml语法,格式如server.port: 8082对应下面格式;注意中间有空格
+#注意这里配置什么端口页面就使用什么端口,不在是8080
+server:
+  port: 8082
+
+#下面是配置业务键值对,和项目访问无关
+cupSize: F
+age: 17
+content: "cupSize: ${cupSize}, age: ${age}"
+boy:
+  age: 11
+  name: huangjufei
